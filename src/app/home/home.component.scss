@@ -1,0 +1,46 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1em;
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin: 0 15px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
