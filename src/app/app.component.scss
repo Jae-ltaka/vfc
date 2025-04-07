@@ -1,0 +1,36 @@
+/* Style global du site */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+:host {
+  display: block;
+}
+
+/* Layout général */
+main {
+  padding: 24px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Liens généraux */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  flex: 1;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
