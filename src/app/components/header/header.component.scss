@@ -1,5 +1,40 @@
+.custom-header {
+  background-color: #002f5f; // Bleu foncé
+  padding: 1rem 2rem;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .header-button {
+    background-color: #f5b342; // Orange/jaune
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e09e2e;
+    }
+  }
+}
+
 header {
-  background-color: white;
+  background-color: #002f5f;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -30,8 +65,8 @@ header {
 }
 
 nav a {
-  margin-left: 24px;
-  color: #555;
+  margin-left: 2rem;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -40,3 +75,82 @@ nav a {
 nav a:hover {
   color: #007bff;
 }
+.conteneur-texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #002f5f; // bleu foncé
+  color: white;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-clip: url('assets/shutterstock_18012613_1\ \(1\).mp4'); // optionnel si tu veux le fond
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+
+    .search-bar {
+      display: flex;
+
+      input {
+        flex: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px 0 0 4px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #003366;
+        color: white;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #002244;
+      }
+    }
+  }
+}
+
