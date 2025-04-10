@@ -38,4 +38,8 @@
         ngModel
         #message="ngModel"
       ></textarea>
-      <div class="error" *ngIf="email.invalid && email.touched">Email valide requis.</div>
+      <div class="error" *ngIf="email.invalid && email.touched">Email valide requis.
+         <div class="button">
+          <button type="submit">Envoyer</button></div>
+        
+      </div>
