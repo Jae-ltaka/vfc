@@ -1,5 +1,5 @@
 .custom-header {
-  background-color: #002f5f; // Bleu foncé
+  background-color: #003366; // Bleu foncé
   padding: 1rem 2rem;
 
   .header-content {
@@ -51,11 +51,13 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+  height: 120px;
+  width: auto;
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
+  height: 120px;
+  width: auto;
 }
 
 .logo span {
