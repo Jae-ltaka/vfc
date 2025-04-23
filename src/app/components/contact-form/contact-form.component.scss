@@ -1,62 +1,85 @@
-.contact-form {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-}
-
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  background: #003366; /* bleu foncé */
+.form-wrapper {
+  background-color: #002b53; // bleu marine
   color: white;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); // ombre légère
+   margin-top: 3rem; // ou 4rem, ou 50px selon l’espace souhaité
 }
 
-.form-group {
-  margin-bottom: 20px;
+h2 {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  text-align: left;
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 500;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 1rem;
   font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.button {
-  display: block;
-  width: 100%;
-  padding: 12px;
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+  font-weight: bold;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center; // ➤ centre verticalement
+  font-weight: bold;
+  background-color: #002b53;
+  color: white;
+  gap: 0rem; // espace entre la case et le texte
+  flex-wrap: wrap-reverse; // au cas où tu veux gérer le responsive proprement
+
+  input[type="checkbox"] {
+    transform: scale(1.2); // agrandir la case
+    margin: 0;
+    accent-color: white; // (si tu veux personnaliser)
+  }
+}
+
+.envoyer {
   background-color: red;
   color: white;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  padding: 1rem 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #cc0000;
+  }
 }
 
-button:disabled {
-  background-color: #a1c5f0;
-  cursor: not-allowed;
+@media (max-width: 600px) {
+  .form-wrapper {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
-button:hover:enabled {
-  background-color: #0056b3;
-}
-
-.error {
-  color: #d9534f;
-  font-size: 0.9rem;
-  margin-top: 4px;
-}
