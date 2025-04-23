@@ -7,6 +7,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms'; // ✅ POUR ngModel ET ngForm
 import { CommonModule } from '@angular/common'; // ✅ POUR *ngIf
+import { AmbassadeursComponent } from './ambassadeurs/ambassadeurs.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -17,7 +19,13 @@ import { CommonModule } from '@angular/common'; // ✅ POUR *ngIf
     ContactFormComponent,
     FooterComponent,
     FormsModule,     
-    CommonModule    
+    CommonModule,
+    AmbassadeursComponent
   ],
 })
+
+
+
 export class AppModule { }
+export class AppRoutingModule {}
+
