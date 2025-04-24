@@ -88,16 +88,58 @@ nav a:hover {
   background-color: #002f5f; // bleu foncé
   color: white;
 }
-.hero-section {
+.hero-inner {
+  position: relative;
+  z-index: 1;        /* logo+texte au premier plan */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
-  background-clip: url('assets/shutterstock_18012613_1\ \(1\).mp4'); // optionnel si tu veux le fond
-  background-size: cover;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;  
   background-position: center;
   color: white;
-
+  
+  .hero {
+    position: relative;
+  min-height: 80vh;                /* ou la hauteur que tu veux */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image: url('/assets/fondetoile.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  .hero .hero-inner {
+    position: relative;
+    z-index: 1;                       /* logo+texte devant le background */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* puis ton logo et ton texte ici, par exemple */
+  .hero .logo {
+    flex: 0 0 200px;
+  }
+  .hero .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .hero .text {
+    flex: 1;
+    color: white;
+  }
+  }
   .left {
     flex: 1;
     display: flex;
