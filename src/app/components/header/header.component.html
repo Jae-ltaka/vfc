@@ -8,45 +8,35 @@
         <button class="header-button">Je m'abonne !</button>
       </div>
     </header>
-    <div class="hero">
-    <div class="background">
-      <div class="center">
-       <img src="/assets/fondetoile.jpg" alt="background">
-      </div>
-    <div class="hero-section">
-      <div class="left">
-        <img src="/assets/logo.png" alt="Logo VFC" />
-      </div>
-      <div class="right">
-        <h1>DÉCOUVREZ LA VÉRITÉ<br />DE LA FOI CHRÉTIENNE</h1>
-        <p>
-          Recherchez des réponses sur les croyances et les pratiques de la foi chrétienne
-          dans la plus grande base de données francophone.
-        </p>
-        <div class="search-bar">
-          <input type="text" placeholder="Rechercher..." />
-          <button>Rechercher</button>
+    <main class="hero">
+      <div class="hero__inner">
+        <div class="hero__logo">
+          <img src="assets/logo.png" alt="Logo VFC" />
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            DÉCOUVREZ LA VÉRITÉ<br/>DE LA FOI CHRÉTIENNE
+          </h1>
+          <p class="hero__subtitle">
+            Recherchez des réponses sur les croyances et pratiques de la foi chrétienne dans la plus grande base de données francophone.
+          </p>
+          <form class="hero__search">
+            <input type="text" placeholder="Votre question …" />
+            <button type="submit">Rechercher</button>
+          </form>
         </div>
       </div>
-    </div>
-    
+    </main>
     <nav class="menu">
-      <ul class="menu-gauche">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Questions / réponses</a></li>
-        <li><a href="#">Nos ressources</a></li>
-        <li><a href="#">Apolos</a></li>
-        <li><li>
-          <button type="button" routerLink="/ambassadeurs">
-            Devenez Ambassadeurs
-          </button>
-        </li>
-      </ul>
-      <div class="menu-droite">
-        <a href="#" class="don-btn">FAIRE UN DON 🤍</a>
+      <div class="menu__inner">
+        <ul class="menu__links">
+          <li><a routerLink="/">Accueil</a></li>
+          <li><a routerLink="/faq">Questions / Réponses</a></li>
+          <li><a routerLink="/ressources">Nos Ressources</a></li>
+          <li><a routerLink="/qui">Apolos</a></li>
+         <li><button (click)="goAmbassadeurs()">Devenez Ambassadeurs</button></li>
+        </ul>
+        <a routerLink="/don" class="menu__don-btn">FAIRE UN DON 🤍</a>
       </div>
     </nav>
     
-
-
-

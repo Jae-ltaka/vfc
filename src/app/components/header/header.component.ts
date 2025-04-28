@@ -13,7 +13,6 @@ import { Router,RouterModule } from '@angular/router';
 export class HeaderComponent {
   constructor(public router: Router) {}
   goAmbassadeurs() {
-    console.log('🔵 goAmbassadeurs() appelé');
     this.router.navigate(['/ambassadeurs']);
   }
 }

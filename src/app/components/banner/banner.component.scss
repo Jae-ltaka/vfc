@@ -48,12 +48,15 @@
 
   .image-block {
     flex-shrink: 0;
-    img {
-      max-width: 300px;
-      height: auto;
-      display: block;
-    }
+    flex: 0 0 200px;    /* avant c’était 300px */
+  margin-right: 2rem; /* espace entre l’image et le texte */
   }
+ img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -62,11 +65,18 @@
     text-align: center;
   }
 
+  .img {
+    flex: 0 0 200px;
+    margin-right: 2rem;
+  }
   .image-block img {
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .text-block h1 {
     font-size: 2rem;
   }
 }
+
