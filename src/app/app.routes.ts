@@ -1,9 +1,10 @@
+// app.routes.ts
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { AmbassadeursComponent } from './ambassadeurs/ambassadeurs.component';
 
-const Routes: Routes = [
-  { path: '', component: AppComponent },
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'ambassadeurs', component: AmbassadeursComponent },
+  
 ];
-export const routes: Routes = [];

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @Component({
   selector: 'app-ambassadeurs',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './ambassadeurs.component.html',
   styleUrl: './ambassadeurs.component.scss'
 })
