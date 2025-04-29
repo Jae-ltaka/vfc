@@ -10,18 +10,18 @@ import { HeaderComponent } from './components/header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: 
-  [CommonModule,
-     RouterOutlet,
-      HeaderComponent,
-      BannerComponent,
-      ArticlesComponent,
-      ContactFormComponent,
-      FooterComponent,
-      RouterModule
-    ],
+  imports: [
+    CommonModule,
+    RouterModule,
+    RouterOutlet,
+    HeaderComponent,
+    BannerComponent,
+    ArticlesComponent,
+    ContactFormComponent,
+    FooterComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'frontend';
