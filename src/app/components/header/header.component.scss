@@ -29,6 +29,7 @@
   .header-button {
     background-color: #f5b342; // Orange/jaune
     color: white;
+    text-decoration: none;
     font-weight: bold;
     padding: 0.7rem 1.5rem;
     border: none;
@@ -210,7 +211,7 @@ nav a:hover {
   transition: color .2s;
 }
 .menu__links a:hover {
-  color: #ccc;
+  color: #f5b342;
 }
 .menu__don-btn {
   background: #cc1f25;
@@ -220,10 +221,11 @@ nav a:hover {
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  transition: background .3s;
+  transition: background-color 0.2s;
 }
 .menu__don-btn:hover {
-  background: #a00f15;
+  background: #e63946;
+  color: #fff;
 }
 @media (max-width: 768px) {
   .menu__inner {
