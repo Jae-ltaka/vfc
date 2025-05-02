@@ -42,19 +42,27 @@ textarea::placeholder {
 }
 
 .checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center; // ➤ centre verticalement
   font-weight: bold;
   background-color: #002b53;
   color: white;
-  gap: 0rem; // espace entre la case et le texte
+  gap: 0.5rem;   // espace entre la case et le texte
   flex-wrap: wrap-reverse; // au cas où tu veux gérer le responsive proprement
 
   input[type="checkbox"] {
-    transform: scale(1.2); // agrandir la case
+    width: 1.25rem; 
     margin: 0;
     accent-color: white; // (si tu veux personnaliser)
   }
+}
+.terms {
+  font-size: 1rem;
+}
+
+.terms__checkbox {      
+  height: 1.25rem;
+  margin: 0;              /* rince tout margin par défaut */
 }
 
 .envoyer {
@@ -63,7 +71,7 @@ textarea::placeholder {
   font-weight: bold;
   font-size: 1.2rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 1rem 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -73,7 +81,7 @@ textarea::placeholder {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .form-wrapper {
     padding: 1rem;
   }

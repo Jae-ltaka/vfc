@@ -1,0 +1,103 @@
+.article-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f0f0f0;  
+}
+
+/* ---- Colonne principale ---- */
+.main-content {
+  flex: 2 1 600px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.article-title {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  color: #002f5f;
+}
+.article-image {
+  width: 80%;
+  height: auto;
+  margin: 1rem 0;
+}
+.qa h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+  color: #002f5f;
+}
+.qa p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+.read-english {
+  text-decoration: none;
+  font-weight: 500;
+  color: #003366;
+}
+
+/* ---- Sidebar ---- */
+.sidebar {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.card-header {
+  background: #ffc850;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #002f5f;
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #002f5f;
+  font-weight: 500;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* Carte de don */
+.support-card {
+  text-align: center;
+}
+.don__btn {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #cc1f25;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.don-btn:hover {
+  background: #a00f15;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .article-page {
+    flex-direction: column;
+  }
+}

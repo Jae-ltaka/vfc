@@ -1,39 +1,28 @@
+<app-header></app-header>
 
-<header class="header-banner">
-  <!-- Bandeau d'abonnement -->
-  <div class="abonnement-bar">
-    <p>Recevoir chaque mardi une vérité de la foi chrétienne</p>
-    <a href="#" class="btn-orange">Je m'abonne !</a>
-  </div>
-
-  <!-- Section avec logo + texte + recherche -->
-  <div class="banner-content">
-    <div class="logo-section">
-      <img src="assets/logo-vfc.png" alt="Logo VFC">
+  <section class="ambassador">
+    <div class="ambassador__inner">
+      <!-- Bloc visuel à gauche -->
+      <div class="ambassador__visual">
+        <img
+          src="assets/rc.png"
+          alt="1000 Raisons de Croire"
+          class="ambassador__img"
+        />
+      </div>
+      <div class="ambassador__content">
+        <h2 class="ambassador__title">
+          REJOIGNEZ L’ÉQUIPE DES 1000RC,<br/>
+          DEVENEZ AMBASSADEURS
+        </h2>
+        <p class="ambassador__desc">
+          Nous avons 1000 Raisons de Croire,<br/> Nous avons besoin de 1000 voix pour le dire
+        </p>
+        <button type="button" class="ambassador__btn" (click)="goAmbassadeurs()"> Rejoignez-nous</button>
+      </div>
     </div>
-    <div class="texte-section">
-      <h1>DÉCOUVREZ LA VÉRITÉ<br>DE LA FOI CHRÉTIENNE</h1>
-      <p>Recherchez des réponses sur les croyances et les pratiques de la foi chrétienne dans la plus grande base de données francophone.</p>
-      <form class="search-bar">
-        <input type="text" placeholder="Rechercher..." />
-        <button type="submit">Rechercher</button>
-      </form>
-    </div>
-  </div>
+  </section>
 
-  <!-- Menu principal -->
-  <nav class="nav-main">
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Questions / réponses</a></li>
-      <li><a href="#">Nos ressources</a></li>
-      <li><a href="#">Apolos</a></li>
-      <li><a href="#">Devenez Ambassadeurs</a></li>
-    </ul>
-    <a href="#" class="btn-rouge">FAIRE UN DON ❤️</a>
-    <a routerLink="/ambassadeurs" routerLinkActive="active">Devenez Ambassadeurs</a>
-  </nav>
-</header>
 <app-footer></app-footer>
 
 
