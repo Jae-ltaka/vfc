@@ -18,4 +18,7 @@ export class HeaderComponent {
   goToQuestion(){
     this.router.navigate(['/questions'])
   }
+  goConnexion() {
+    this.router.navigate(['/connexion']);
+  }
 }

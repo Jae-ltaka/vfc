@@ -4,10 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { AmbassadorComponent } from './ambassadeurs/ambassadeurs.component';
 import { QuiComponent } from './qui/qui.component';
 import { QuestionsComponent } from './questions/questions.component';
-
+import { ConnexionComponent } from './connexion/connexion.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'ambassadeurs', component: AmbassadorComponent },
+  { path: 'ambassadeurs', component: AmbassadorComponent, },
   { path: 'qui',component: QuiComponent },
   {path:'questions',component: QuestionsComponent},
+  {path: 'connexion',component:ConnexionComponent},
+  {path:'inscription',component:InscriptionComponent},
 ];

@@ -1,0 +1,50 @@
+<app-header></app-header>
+<div class="page">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-container">
+    <h2>Inscription</h2>
+
+    <label>
+      Nom complet
+      <input name="fullName" ngModel required placeholder="Votre nom complet" />
+    </label>
+
+    <label>
+      E-mail
+      <input
+        type="email"
+        name="email"
+        ngModel
+        required
+        placeholder="votre@exemple.com"
+      />
+    </label>
+
+    <label>
+      Mot de passe
+      <input
+        type="password"
+        name="password"
+        ngModel
+        required
+        minlength="6"
+        placeholder="••••••••"
+      />
+    </label>
+
+    <label>
+      Ressaissez votre Mot de passe
+      <input
+        type="password"
+        name="confirm"
+        ngModel
+        required
+        placeholder="••••••••"
+      />
+    </label>
+
+    <button type="submit" [disabled]="f.invalid">
+      S’inscrire
+    </button>
+  </form>
+</div>
+<app-footer></app-footer>

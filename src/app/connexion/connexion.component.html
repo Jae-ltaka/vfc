@@ -1,0 +1,39 @@
+<app-header></app-header>
+<form>
+<div class="login-page">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="login-form">
+    <h2>Connexion</h2>
+
+    <label>
+      Adresse e-mail
+      <input
+        type="email"
+        name="email"
+        ngModel
+        required
+        placeholder="votre@exemple.com"
+      />
+    </label>
+
+    <label>
+      Mot de passe
+      <input
+        type="password"
+        name="password"
+        ngModel
+        required
+        placeholder="••••••••"
+      />
+    </label>
+
+    <button type="submit" [disabled]="f.invalid">Se connecter</button>
+    <div class="login-links">
+      <a routerLink="/register">Inscrivez-vous</a>
+      <span class="sep">|</span>
+      <a routerLink="/forgot-password">Mot de passe oublié?</a>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>
+
+

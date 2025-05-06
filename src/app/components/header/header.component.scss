@@ -32,6 +32,7 @@
     font-weight: bold;
     padding: 0.7rem 1.5rem;
     border: none;
+    text-decoration: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -75,12 +76,21 @@ header {
   color: #333;
 }
 
-nav a {
-  margin-left: 2rem;
-  color: white;
+.main-nav {
+  display: flex;
+  flex-wrap: nowrap;        /* interdiction du retour à la ligne */
+  align-items: center;
+  gap: 2rem;              /* espace plus serré */
+  overflow-x: auto;         /* permet le scroll s’il manque un poil */
+}
+
+/* Réduire un peu la taille de la police */
+.main-nav a {
+  font-size: 0.9rem;        /* 90% de la taille initiale */
+  white-space: nowrap;      /* aucun mot ne se coupe */
+  padding: 0.4rem 0.6rem;   /* moins de padding horizontal */
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  color: white;
 }
 
 nav a:hover {
