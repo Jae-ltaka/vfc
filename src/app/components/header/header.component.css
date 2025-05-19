@@ -1,0 +1,261 @@
+@charset "UTF-8";
+.custom-header {
+  background-color: #003366;
+  padding: 1rem 2rem;
+}
+.custom-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.custom-header .header-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+.custom-header .header .inner {
+  display: flex;
+  align-items: center;
+}
+.custom-header .header-button {
+  background-color: #f5b342;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.custom-header .header-button:hover {
+  background-color: #e09e2e;
+}
+
+header {
+  background-color: #002f5f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 120px;
+  width: auto;
+}
+
+.logo img {
+  height: 120px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: nowrap; /* interdiction du retour à la ligne */
+  align-items: center;
+  gap: 2rem; /* espace plus serré */
+  overflow-x: auto; /* permet le scroll s’il manque un poil */
+}
+
+/* Réduire un peu la taille de la police */
+.main-nav a {
+  font-size: 0.9rem; /* 90% de la taille initiale */
+  white-space: nowrap; /* aucun mot ne se coupe */
+  padding: 0.4rem 0.6rem; /* moins de padding horizontal */
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+.conteneur-texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+  padding: 2rem;
+  background: #002f5f;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: "assets/fondetoile.jpg" center/cover no-repeat;
+  z-index: 0;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* ↑ ici tu augmentes le padding à gauche */
+  padding: 2rem 2rem 2rem 8rem;
+}
+
+/* ou bien */
+.hero__content {
+  flex: 1;
+  color: #fff;
+  /* décalage supplémentaire vers la droite */
+  margin-left: 5rem;
+}
+
+.hero__logo {
+  flex: 0 0 35%; /* 35% de la largeur du conteneur parent */
+  margin-right: 2rem;
+}
+
+.hero__logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.hero__search {
+  display: flex;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hero__search input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1rem;
+  color: #003366;
+}
+
+.hero__search button {
+  background: #003366;
+  color: #fff;
+  border: none;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.hero__search button:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 768px) {
+  .hero__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__logo {
+    margin-bottom: 1.5rem;
+  }
+}
+.menu {
+  background: #003366;
+}
+
+.menu__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.menu__links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.menu__links a:hover {
+  color: #ccc;
+}
+
+.menu__don-btn {
+  background: #cc1f25;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.menu__don-btn:hover {
+  background: #a00f15;
+}
+
+@media (max-width: 768px) {
+  .menu__inner {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .menu__links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}/*# sourceMappingURL=header.component.css.map */

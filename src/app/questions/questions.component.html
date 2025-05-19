@@ -1,67 +1,34 @@
 <app-header></app-header>
-<div class="article-page">
-  <!-- Colonne principale -->
-  <main class="main-content">
-    <h1 class="article-title">
-      Les péchés mortels peuvent-ils être pardonnés sans être confessés ?
-    </h1>
-    <img
-      src="assets/main.jpg"
-      alt="Lecture de la Bible"
-      class="article-image"
-    />
-    <section class="qa">
-      <h2>Question :</h2>
-      <p>Les péchés mortels peuvent-ils être pardonnés sans avoir à se confesser ?</p>
-
-      <h2>Réponse :</h2>
-      <p>
-        La confession sacramentelle est normativement requise pour le pardon
-        des péchés mortels ; elle n'est pas absolument requise. Cela signifie que,
-        dans des circonstances extraordinaires, les péchés mortels peuvent être
-        pardonnés en dehors de la confession sacramentelle. Si un catholique est
-        mourant et ne peut se rendre à la confession sacramentelle, ses péchés
-        mortels peuvent être pardonnés s'il se repent avec une véritable contrition
-        (c’est-à-dire un chagrin pour le péché) et a au moins l'intention
-        implicite de se rendre à la confession sacramentelle si l'occasion lui
-        en est donnée.
-      </p>
-      <a
-  href="https://https://https://www.catholic.com/qa/can-mortal-sins-be-forgiven-without-confessing"
-  class="read-english"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Lire l’article en anglais
-</a>
-
-    </section>
-  </main>
-
-  <!-- Sidebar à droite -->
-  <aside class="sidebar">
-    <div class="card">
-      <h3 class="card-header">Découvrez cet article</h3>
-      <img src="assets/ange.jpg" alt="Ange gardien" />
-      <a routerLink="/article/ange-gardien" class="card-link">
-        Jésus avait-il un ange gardien ?
-      </a>
+<div class="container">
+  <!-- colonne de recherche -->
+  <div class="sidebar">
+    <div class="search-card">
+      <div class="card-header"></div>
+      <div class="search-content">
+        <label for="search">Rechercher un article par thème</label>
+        <input
+          id="search"
+          type="text"
+          [(ngModel)]="searchTerm"
+          placeholder="Tapez un mot-clé"
+        />
+      </div>
     </div>
+  </div>
 
-    <div class="card support-card">
-      <h3 class="card-header">Soutenez-nous !</h3>
-      <p>Pour nous soutenir</p>
-      <button type="button" class="don__btn" (click)="goDon()"> Faire un don </button>
+  <!-- liste des articles -->
+  <div class="articles">
+    <div
+      *ngFor="let a of articles"
+      class="article-card"
+    >
+      <div class="card-header"></div>
+      <div class="card-body">
+        <img [src]="a.imageUrl" [alt]="a.title" />
+        <div class="title">{{ a.title }}</div>
+      </div>
     </div>
-    
-
-    <div class="card">
-      <h3 class="card-header">Découvrez cet article</h3>
-      <img src="assets/livre.jpg" alt="Bible ouverte" />
-      <a routerLink="/article/bible-symbolique" class="card-link">
-        Faut-il lire la Bible de manière littérale ou symbolique ?
-      </a>
-    </div>
-  </aside>
+  </div>
 </div>
+
 <app-footer></app-footer>

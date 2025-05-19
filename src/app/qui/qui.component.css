@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* 1) Wrapper full-width avec fond bleu-marine */
+.qui {
+  background-color: #003366;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* 3) Le “card” blanc centré */
+.qui__card {
+  background-color: #ffffff;
+  max-width: 800px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+/* 4) Titre centré */
+.qui__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+/* 5) Paragraphe */
+.qui__card p {
+  margin: 0 0 1.25rem;
+}
+
+/* 6) Responsive – sur mobile on réduit les paddings */
+@media (max-width: 600px) {
+  .qui {
+    padding: 1rem;
+  }
+  .qui__card {
+    padding: 1.5rem;
+  }
+  .qui__title {
+    font-size: 1.75rem;
+  }
+}/*# sourceMappingURL=qui.component.css.map */
