@@ -1,7 +1,13 @@
 @charset "UTF-8";
 .custom-header {
-  background-color: #003366;
-  padding: 1rem 2rem;
+ background-image: url('/assets/images/fondetoile.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* facultatif : dimensions minimuim */
+  min-height: 300px;
+  display: flex;
+  align-items: center;
 }
 .custom-header .header-content {
   display: flex;
