@@ -56,14 +56,14 @@ body {
 /* bouton d’envoi */
 .login-form button {
   margin-top: 0.5rem;
-  padding: 0.75rem;
-  background: #cc1f25;   /* rouge vif */
+  padding: 0.25rem;
+  background: #cc1f25;
   font-family: 'Nunito', sans-serif;
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-radius: 24px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background 0.2s;
 }

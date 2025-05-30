@@ -1,0 +1,65 @@
+.auth-container {
+  background-image: url('/assets/bg-stars.jpg'); /* ton image étoilée */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  background: rgba(0, 28, 64, 0.9);
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.auth-box h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.auth-box p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.auth-box label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.auth-box button {
+  width: 100%;
+  background: #dc2626;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lien-retour {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.lien-retour a {
+  color: #60a5fa;
+  text-decoration: none;
+}
