@@ -24,6 +24,6 @@ export class ConnexionComponent {
     this.router.navigate(['/inscription']);
   }
    goToMot(): void {
-    this.router.navigate(['/mot-de-passe-oublie']);
+    this.router.navigate(['/mot']);
   }
 }

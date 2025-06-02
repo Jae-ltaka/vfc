@@ -6,6 +6,7 @@ import { QuiComponent } from './qui/qui.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { MotComponent } from './mot/mot.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'ambassadeurs', component: AmbassadorComponent, },
@@ -13,4 +14,5 @@ export const routes: Routes = [
   {path:'questions',component: QuestionsComponent},
   {path: 'connexion',component:ConnexionComponent},
   {path:'inscription',component:InscriptionComponent},
+  {path:'mot',component:MotComponent},
 ];

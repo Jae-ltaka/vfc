@@ -65,11 +65,10 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.2s;
 }
 
 .login-form button:disabled {
-  background: #800000;
+  background: #800;
   cursor: not-allowed;
 }
 
@@ -77,21 +76,33 @@ body {
   background: #e33b47;
 }
 .login-links {
-  margin-top: 1rem;
-  text-align: center;        /* centre horizontalement */
-  font-size: 0.9rem;
-  color: #fff;
+  display: flex;
+  gap: 16px;               /* espace horizontal entre les deux liens */
+  justify-content: center; /* centre horizontalement si vous voulez */
+  margin-top: 10px;
 }
 
-.login-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 0.5rem;
-  transition: color 0.2s;
+.login-link {
+  display: inline-block;             /* pour que padding fonctionne */
+  padding: 4px 8px;                  /* un peu d’espace pour cliquer facilement */
+  color: #ffffff;                    /* texte blanc */
+  background-color: transparent;     /* pas de fond coloré */
+  border: none;                      /* pas de bordure */
+  text-decoration: none;             /* pas de soulignement par défaut */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
+
+.login-link:hover {
+  opacity: 0.7;                      /* léger effet au survol */
+}
+
 
 .login-links a:hover {
   color: #ffd15c;
+  opacity: 0.7; /* léger effet au survol */
 }
 
 .login-links .sep {

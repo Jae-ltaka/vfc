@@ -28,9 +28,8 @@
 
     <button type="submit" [disabled]="f.invalid">Se connecter</button>
     <div class="login-links">
-     <button (click)="goToInscription()">Créer un compte</button>
-      <span class="sep"></span>
-      <button (click)="goToMot()">Mot de passe oublié ?</button>
+    <a routerLink="/inscription" class="login-link">Créer un compte</a>
+    <a routerLink="/mot" class="login-link">Mot de passe oublié&nbsp;?</a>
     </div>
   </form>
 </div>
