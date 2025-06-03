@@ -1,5 +1,7 @@
 // app.routes.ts
 import { Routes } from '@angular/router';
+import { NgModule }             from '@angular/core';
+import { RouterModule, } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AmbassadorComponent } from './ambassadeurs/ambassadeurs.component';
 import { QuiComponent } from './qui/qui.component';

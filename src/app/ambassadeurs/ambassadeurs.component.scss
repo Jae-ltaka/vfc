@@ -1,7 +1,10 @@
-
+.ambassador {
+  background-color: #003366; /* votre bleu foncé */
+  padding: 40px 20px;        /* ajustez les paddings haut/bas et côtés selon le rendu désiré */
+}
 .ambassador__visual img {
-  width: 400px ;
-  max-width: 100% ;
+  width: 50% ;
+  max-width: 200% ;
   height: auto ;
   display: block;
   background-color: #003366;
@@ -19,13 +22,13 @@
 .ambassador__title {
 font-family: 'Montserrat', sans-serif;
 font-weight: 700;
-color: black;
+color: white;
 margin: 0 0 1rem;
 }
 .ambassador__desc{
 font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: black;
+  color: white;
 }
 .ambassador__content {
   flex: 1;
@@ -42,7 +45,7 @@ font-family: 'Roboto', sans-serif;
   font-size: 1.125rem;          
   font-weight: 600;
   color: #ffffff;              
-  background-color: #003366;    
+  background-color: #f5b342;    
   border: none;                 
   border-radius: 50px;          
   cursor: pointer;
