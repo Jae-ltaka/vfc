@@ -9,6 +9,8 @@ import { QuestionsComponent } from './questions/questions.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { MotComponent } from './mot/mot.component';
+import { IaComponent } from './ia/ia.component';
+
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'ambassadeurs', component: AmbassadorComponent, },
@@ -17,4 +19,5 @@ export const routes: Routes = [
   {path: 'connexion',component:ConnexionComponent},
   {path:'inscription',component:InscriptionComponent},
   {path:'mot',component:MotComponent},
+  {path: 'ia',component:IaComponent},
 ];

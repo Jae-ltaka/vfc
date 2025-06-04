@@ -1,0 +1,51 @@
+<app-header></app-header>
+<div class="wrapper">
+  <!-- ========== SIDEBAR (navigation) ========== -->
+  <nav class="sidebar">
+    <div class="logo">Apolos</div>
+    <ul>
+      <li>Nouvelle conversation</li>
+      <li>Historique</li>
+      <li>Favoris</li>
+      <li>Paramètres</li>
+      <li>Déconnexion</li>
+    </ul>
+  </nav>
+
+  <!-- ========== ZONE PRINCIPALE ========== -->
+  <div class="main">
+    <!-- --- Bandeau du haut --- -->
+    <header class="header">
+      <div class="session-code">1000mc</div>
+      <div class="title">Apolos</div>
+    </header>
+
+    <!-- --- Zone de chat (bulles) --- -->
+    <div class="chat-container">
+      <div
+        *ngFor="let msg of messages"
+        class="message"
+        [ngClass]="{
+          bot: msg.sender === 'bot',
+          user: msg.sender === 'user'
+        }"
+      >
+        {{ msg.text }}
+      </div>
+    </div>
+
+    <!-- --- Zone de saisie en bas --- -->
+    <div class="input-area">
+      <input
+        type="text"
+        placeholder="Tapez votre message à Apolos…"
+        [(ngModel)]="inputText"
+        (keyup.enter)="sendMessage()"
+      />
+      <button (click)="sendMessage()">Envoyer</button>
+    </div>
+  </div>
+</div>
+
+
+<app-footer></app-footer>
