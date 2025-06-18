@@ -19,5 +19,7 @@ export const routes: Routes = [
   {path: 'connexion',component:ConnexionComponent},
   {path:'inscription',component:InscriptionComponent},
   {path:'mot',component:MotComponent},
-  {path: 'ia',component:IaComponent},
+  {
+  path: 'ia',loadComponent: () => import('./ia/ia.component').then(m => m.IaComponent)
+}
 ];

@@ -22,12 +22,14 @@
 .sidebar ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .sidebar ul li {
   margin: 15px 0;
   cursor: pointer;
   /* On peut ajouter un hover si on veut */
+   color: white;
 }
 
 .sidebar ul li:hover {
