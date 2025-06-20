@@ -32,10 +32,16 @@
           <p class="hero__subtitle">
             Recherchez des réponses sur les croyances et pratiques de la foi chrétienne dans la plus grande base de données francophone.
           </p>
-          <form class="hero__search">
-            <input type="text" placeholder="Votre question …" />
-            <button type="submit">Rechercher</button>
-          </form>
+        <form class="hero__search" (submit)="onSearch()">
+  <input
+    type="text"
+    name="search"
+    [(ngModel)]="searchQuery"
+    placeholder="Votre question …"
+  />
+  <button type="submit">Rechercher</button>
+</form>
+
         </div>
       </div>
     </main>
