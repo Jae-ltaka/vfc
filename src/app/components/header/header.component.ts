@@ -15,4 +15,7 @@ export class HeaderComponent {
   goAmbassadeurs() {
     this.router.navigate(['/ambassadeurs']);
   }
+  goToQuestion(){
+    this.router.navigate(['/questions'])
+  }
 }
